@@ -5,6 +5,7 @@ theme :
 nav:
   - Home: index.md
   - About Hujan UI : about.md
-  - Prerequisite: prerequisite.md
-  - MaaS Installation: install-maas.md
-  - Deploy Hujan UI : install.md
+  - Installing Hujan UI :
+      - Prerequisite: prerequisite.md
+      - MaaS Installation: install-maas.md
+      - Deploy Hujan UI : install.md
