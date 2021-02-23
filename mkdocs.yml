@@ -1,0 +1,10 @@
+site_name: HujanIO
+docs_dir: docs
+theme :
+  name: material
+nav:
+  - Home: index.md
+  - About Hujan UI : about.md
+  - Prerequisite: prerequisite.md
+  - MaaS Installation: install-maas.md
+  - Deploy Hujan UI : install.md
