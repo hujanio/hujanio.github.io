@@ -2,10 +2,16 @@ site_name: HujanIO
 docs_dir: docs
 theme :
   name: material
+  palette :
+    primary: white
+    accent: light blue
+  logo: img/logo.png
+  favicon: img/logo.png
+  features:
+    - navigation.tabs
 nav:
-  - Home: index.md
-  - About Hujan UI : about.md
-  - Installing Hujan UI :
+  - Hujan UI : index.md
+  - Getting Started :
       - Prerequisite: prerequisite.md
-      - MaaS Installation: install-maas.md
+      - MAAS Installation: install-maas.md
       - Deploy Hujan UI : install.md
