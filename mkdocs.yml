@@ -3,12 +3,13 @@ docs_dir: docs
 theme :
   name: material
   palette :
-    primary: white
+    primary: teal
     accent: light blue
   logo: img/logo.png
   favicon: img/logo.png
   features:
     - navigation.tabs
+  custom_dir: material
 nav:
   - Hujan UI : index.md
   - Getting Started :
