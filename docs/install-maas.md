@@ -20,23 +20,23 @@ See [MAAS requirements](https://maas.io/docs/snap/2.9/ui/maas-requirements) in t
 
 Here is a concise summary of how to install and initialise MAAS.  
 
-1. Install MAAS and Testdb for MAAS
+-  Install MAAS and Testdb for MAAS
 ```
 sudo snap install maas --channel=2.9/stable
 sudo snap install maas-test-db
 ```
 
-2. First MAAS initialisation
+- First MAAS initialisation
 ```
 sudo maas init region+rack --maas-url http://[maas-url]:5240/MAAS --database-uri maas-test-db:///
 ```
 
-3. Create MAAS admin user
+- Create MAAS admin user
 ```
 sudo maas createadmin --username admin --password s3cr3tp455w0rd --email admin@admin.id --ssh-import gh:[username]
 ```
 
-4. Get API Key
+- Get API Key
 ```
 sudo maas apikey --username admin > ~/admin-api-key
 ```
