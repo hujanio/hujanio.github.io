@@ -13,6 +13,6 @@ theme :
 nav:
   - Hujan UI : index.md
   - Getting Started :
-      - Quick Start: prerequisite.md
+      - Pre-requisite: prerequisite.md
       - MAAS Installation: install-maas.md
       - Deploy Hujan UI : install.md
