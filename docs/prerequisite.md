@@ -1,14 +1,14 @@
 This guide provides step by step instructions to deploy hujan io
 
 ## System Requirements
-The system machine must satisfy the following requirements :
-- 1 network interface
-- 4 Core of CPU
-- 4 GiB of RAM
-- 50 GiB of disk space
-- Python 3.6.1 installed
-- Kolla Ansible v9.3.1 installed
-- MAAS v2.8.2 installed
+The system machine must satisfy the following requirements :  
+- 1 network interface  
+- 4 Core of CPU  
+- 4 GiB of RAM  
+- 50 GiB of disk space  
+- Python 3.6.1 installed  
+- Kolla Ansible v9.3.1 installed  
+- MAAS v2.8.2 installed  
 
 
 **Hujan** using MAAS (Metal as a Service) to manage barematal, and Kolla-ansible as the basis of deployment tools.
