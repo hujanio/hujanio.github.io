@@ -45,7 +45,7 @@ sudo apt install ansible
 If the installed ansible version not meet requirement you can use pip. 
 
 ```
-sudo pip install -U 'ansible<2.10'
+sudo pip3 install -U 'ansible<2.10'
 ```
 
 - Install Kolla Ansible.  

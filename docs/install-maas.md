@@ -8,9 +8,9 @@ You can discover, commission, deploy, and dynamically reconfigure a large networ
 
 The entire environment will consist of a single MAAS system. This MAAS cluster will contain a single zone, with the MAAS system (region and rack controllers).  
 
-Here are the hardware requirements :  
-- CPU : 4 Core.  
-- Memmory : 8 GiB.  
+Here are the minumum hardware requirements :  
+- CPU : 4 Core.    
+- Memory : 4 GiB.   
 - Disk : 50 GiB.  
 - 1 NIC.  
 
@@ -41,5 +41,8 @@ sudo maas createadmin --username admin --password s3cr3tp455w0rd --email admin@a
 sudo maas apikey --username admin > ~/admin-api-key
 ```
 
-For production configuration you need to setup PostgreSQL.
+For production you need to setup PostgreSQL.   
+
+  
+**Source** : [MAAS Documentation](https://maas.io/docs/snap/2.8/ui/installation#heading--init-prod)
 
