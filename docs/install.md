@@ -105,12 +105,11 @@ After=network.target
 User=root
 Group=root
 WorkingDirectory=/var/www/html/hujan-ui/
+## Without virtualenv
+ExecStart=/usr/local/bin/gunicorn hujan_ui.wsgi --bind 127.0.0.1:8001 --log-level=debug --log-file=logs/gunicorn.log
 
-## with virtual environment
-ExecStart=/var/www/html/hujan-ui/env/bin/python manage.py runserver 8001
-
-## without virtual environment
-#ExecStart=/usr/bin/python3.6 /var/www/html/hujan-ui/manage.py runserver 8001
+## With virtualenv
+ExecStart=/var/www/html/hujan_ui/env/bin/gunicorn hujan_ui.wsgi --bind 127.0.0.1:8001 --log-level=debug --log-file=logs/gunicorn.log
 
 [Install]
 WantedBy=multi-user.target
