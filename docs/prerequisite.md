@@ -63,3 +63,8 @@ sudo chown $USER:$USER /etc/kolla
 ```
 cp -r /usr/local/share/kolla-ansible/etc_examples/kolla/* /etc/kolla
 ```
+
+- Create `kolla` user
+```
+sudo useradd kolla
+```

@@ -1,68 +1,10 @@
 # Hujan.io
 
-## Prerequisite
-  - Python 3.6.x already installed on system or using virtualenv
-  - virtualenv
-
-## Development Setup
-activate env
-```
-source env/bin/activate
-```
-
-```
-$ pip install -r requirements.txt
-```
-
-Create your own settings and modify as your preference
-
-```
-$ cp hujan_ui/local_settings.py.sample hujan_ui/local_settings.py
-```
-
-Configure MAAS in `local_settings.py` with:
-```
-MAAS_API_KEY = ""
-MAAS_URL = ""
-``` 
-
-Migrate database
-
-```
-$ python manage.py migrate
-```
-
-Collect Static
-
-```
-$ python manage.py collectstatic
-```
-
-Create superuser
-
-```
-$ python manage.py createsuperuser
-Username (leave blank to use 'btech'):
-Email address: 
-Password:
-Password (again):
-Superuser created successfully.
-```
-
-Runing the service
-
-```
-python manage.py runserver
-```
-
-Then open your browser http://localhost:8000 and viola your web apps is already running !
-
-
 ## Server Installation And Configuration
 
 ### Pre-Installation
 
-You need to install the following apps:
+You need to install the following deps :
 
 - python3.6
 - Nginx
@@ -79,7 +21,8 @@ $ git clone {repository}
 $ cd hujan_ui
 ```
 
-Then create virtualenv with python3
+#### With Virtuan Environment
+Create virtualenv with python3
 
 ```
 $ virtualenv --python=python3.6
@@ -88,10 +31,16 @@ $ pip install -r requirements.txt
 $ pip install gunicorn
 ```
 
+#### Without Virtual Environment
+```
+$ pip3.6 install -r requirements.txt
+$ pip3.6 install gunicorn
+```
+
 Then create a configuration file, just copy from sample file and modify as your preference
 
 ```
-$ cp hujan_ui/local_settings.py.sample hujan_ui/local_settings.py
+$ cp hujan_ui/local_settings.sample.py hujan_ui/local_settings.py
 ```
 
 Configure MAAS in `local_settings.py` with:
@@ -110,7 +59,7 @@ Then create first superuser
 
 ```
 $ python manage.py createsuperuser
-Username (leave blank to use 'btech'):
+Username (leave blank to use 'root'):
 Email address:
 Password:
 Password (again):
@@ -127,4 +76,42 @@ Create logs directory
 
 ```
 $ mkdir logs
+```
+
+Runing the service
+
+```
+python manage.py runserver 8001
+```
+
+Then open your browser http://localhost:8001 and viola your web apps is already running !
+
+### Run Hujan UI as Systemd Service 
+
+To run Hujan UI as Systemd, simply you can follow this instruction.  
+
+1. Create hujan_ui.service file
+```
+# touch /etc/systemd/system/hujan_ui.service
+```
+
+2. Add the following entry.
+```
+[Unit]
+Description=hujan ui daemon
+After=network.target
+
+[Service]
+User=root
+Group=root
+WorkingDirectory=/var/www/html/hujan-ui/
+
+## with virtual environment
+ExecStart=/var/www/html/hujan-ui/env/bin/python manage.py runserver 8001
+
+## without virtual environment
+#ExecStart=/usr/bin/python3.6 /var/www/html/hujan-ui/manage.py runserver 8001
+
+[Install]
+WantedBy=multi-user.target
 ```
