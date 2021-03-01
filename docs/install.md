@@ -4,7 +4,7 @@
 
 ### Pre-Installation
 
-You need to install the following deps :
+You need to install the following dependencies :
 
 - python3.6
 - Nginx
@@ -84,18 +84,18 @@ Runing the service
 python manage.py runserver 8001
 ```
 
-Then open your browser http://localhost:8001 and viola your web apps is already running !
+Then open your browser `http://[hujan-ip]:8001` and viola your web apps is already running !
 
 ### Run Hujan UI as Systemd Service 
 
-To run Hujan UI as Systemd, simply you can follow this instruction.  
+To run `Hujan UI` as Systemd, simply you can follow this instruction.  
 
-1. Create hujan_ui.service file
+- Create `hujan_ui.service` file
 ```
 # touch /etc/systemd/system/hujan_ui.service
 ```
 
-2. Add the following entry.
+- Add the following entry.
 ```
 [Unit]
 Description=hujan ui daemon
@@ -114,4 +114,11 @@ ExecStart=/var/www/html/hujan-ui/env/bin/python manage.py runserver 8001
 
 [Install]
 WantedBy=multi-user.target
+```
+
+- Reload daemon and start the service.
+
+```
+# systemctl daemon-reload
+# systemctl start hujan_ui.service
 ```
