@@ -43,12 +43,6 @@ Then create a configuration file, just copy from sample file and modify as your 
 $ cp hujan_ui/local_settings.sample.py hujan_ui/local_settings.py
 ```
 
-Configure MAAS in `local_settings.py` with:
-```
-MAAS_API_KEY = ""
-MAAS_URL = ""
-``` 
-
 Then run the database migration
 
 ```
