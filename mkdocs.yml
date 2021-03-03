@@ -5,7 +5,7 @@ theme :
   palette :
     primary: teal
     accent: light blue
-  logo: img/logo.png
+  logo: img/hujanio-logo-only-white.svg
   favicon: img/logo.png
   features:
     - navigation.tabs
