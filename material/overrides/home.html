@@ -1,0 +1,87 @@
+{#-
+  This file was automatically generated - do not edit
+-#}
+{% extends "overrides/main.html" %}
+{% block tabs %}
+  {{ super() }}
+  <style>.md-header{position:initial}.md-main__inner{margin:0}.md-content{display:none}@media screen and (min-width:60em){.md-sidebar--secondary{display:none}}@media screen and (min-width:76.25em){.md-sidebar--primary{display:none}}</style>
+  <section class="mdx-container">
+    <div class="md-grid md-typeset">
+      <div class="mdx-hero">
+        <div class="mdx-hero__image">
+          <img src="assets/images/illustration.png" alt="" width="1659" height="1200" draggable="false">
+        </div>
+        <div class="mdx-hero__content">
+          <h1>All-in-one Hyper Converged Infrastructure deployment tool</h1>
+          <a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | e }}" class="md-button md-button--primary">
+            Quick start
+          </a>
+          <a href="https://github.com/hujanio" title="Github Page" class="md-button">
+            Github
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- Section 2 -->
+  <section class="tx-container-2">
+    <div class="md-grid md-typeset">
+        <div class="tx-hero__image-2">
+            <img
+                    src="assets/images/hujan.png"
+                    alt=""
+                    width="800"
+                    draggable="false"
+                    align="left"
+            >
+        </div>
+        <div class="tx-hero">
+            <!-- Hero content -->
+            <div class="tx-hero__content-2">
+                <h1>About Hujanio</h1>
+
+                <p>
+                    Hujan.io is an all-in-one designed deployment tool that can be used to build a Hyper Converged Infrastructure (HCI) in an easy and user-friendly way.
+                    Created to fulfill GUI / UI needs that are not yet available in other deployment tools.
+                    Using 
+                    <strong>
+                      <a href="https://maas.io">MAAS (Metal as a Service)</a>
+                    </strong> as baremetal management and 
+                    <strong>
+                      <a href="https://docs.openstack.org/kolla-ansible/latest/">kolla-ansible</a>
+                    </strong> as the basis of deployment tools.
+                </p>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End of Section 2 -->
+
+<!-- Footer Section -->
+<section class="tx-footer">
+  <div class="md-grid md-typeset">
+      <div class="tx-hero">
+          <!-- Hero content -->
+          <div class="tx-hero__content-footer">
+              <p style="text-align:center;">
+                  © 2021
+                  <strong>
+                      <a href="https://hujanio.github.io">Hujan.io</a>
+                  </strong>. All rights reserved
+
+                  || Contact us 📧
+                  <strong>
+                      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=contact@btech.id&su=Btech Contact
+                              &body=Dear Hujanio Team,">contact@btech.id</a>
+                  </strong>.
+              </p>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- End Footer -->
+{% endblock %}
+{% block content %}{% endblock %}
+{% block footer %}{% endblock %}
