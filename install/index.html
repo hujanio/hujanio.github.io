@@ -1,0 +1,668 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../img/logo.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-7.0.1">
+    
+    
+      
+        <title>Deploy Hujan UI - HujanIO</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.1655a90d.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.7fa14f5b.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#009485">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="teal" data-md-color-accent="light-blue">
+      
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#hujanio" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="HujanIO" class="md-header__button md-logo" aria-label="HujanIO">
+      
+  <img src="../img/hujanio-logo-only-white.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            HujanIO
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Deploy Hujan UI
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="md-header__options">
+      
+    </div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href=".." class="md-tabs__link">
+      Hujan UI
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../prerequisite/" class="md-tabs__link md-tabs__link--active">
+        Getting Started
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../machine/" class="md-tabs__link">
+        User Guide
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="HujanIO" class="md-nav__button md-logo" aria-label="HujanIO">
+      
+  <img src="../img/hujanio-logo-only-white.svg" alt="logo">
+
+    </a>
+    HujanIO
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Hujan UI
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      <label class="md-nav__link" for="__nav_2">
+        Getting Started
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Getting Started" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Getting Started
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../prerequisite/" class="md-nav__link">
+        Pre-requisite
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../install-maas/" class="md-nav__link">
+        MAAS Installation
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Deploy Hujan UI
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Deploy Hujan UI
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#server-installation-and-configuration" class="md-nav__link">
+    Server Installation And Configuration
+  </a>
+  
+    <nav class="md-nav" aria-label="Server Installation And Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pre-installation" class="md-nav__link">
+    Pre-Installation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#application-setup" class="md-nav__link">
+    Application Setup
+  </a>
+  
+    <nav class="md-nav" aria-label="Application Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#with-virtuan-environment" class="md-nav__link">
+    With Virtuan Environment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#without-virtual-environment" class="md-nav__link">
+    Without Virtual Environment
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#run-hujan-ui-as-systemd-service" class="md-nav__link">
+    Run Hujan UI as Systemd Service
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      <label class="md-nav__link" for="__nav_3">
+        User Guide
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="User Guide" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          User Guide
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../machine/" class="md-nav__link">
+        Manage Machine
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installer/" class="md-nav__link">
+        Installer Menu
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#server-installation-and-configuration" class="md-nav__link">
+    Server Installation And Configuration
+  </a>
+  
+    <nav class="md-nav" aria-label="Server Installation And Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pre-installation" class="md-nav__link">
+    Pre-Installation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#application-setup" class="md-nav__link">
+    Application Setup
+  </a>
+  
+    <nav class="md-nav" aria-label="Application Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#with-virtuan-environment" class="md-nav__link">
+    With Virtuan Environment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#without-virtual-environment" class="md-nav__link">
+    Without Virtual Environment
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#run-hujan-ui-as-systemd-service" class="md-nav__link">
+    Run Hujan UI as Systemd Service
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="hujanio">Hujan.io</h1>
+<h2 id="server-installation-and-configuration">Server Installation And Configuration</h2>
+<h3 id="pre-installation">Pre-Installation</h3>
+<p>You need to install the following dependencies :</p>
+<ul>
+<li>python3.6</li>
+<li>Nginx</li>
+<li>virtualenv</li>
+</ul>
+<h3 id="application-setup">Application Setup</h3>
+<p>Clone the latest source code from the repository, and I assume you put it to <code>/var/www/html/</code></p>
+<pre><code>$ cd /var/www/html/
+$ git clone {repository}
+$ cd hujan_ui
+</code></pre>
+<h4 id="with-virtuan-environment">With Virtuan Environment</h4>
+<p>Create virtualenv with python3</p>
+<pre><code>$ virtualenv --python=python3.6
+$ source/env/bin/activate
+$ pip install -r requirements.txt
+$ pip install gunicorn
+</code></pre>
+<h4 id="without-virtual-environment">Without Virtual Environment</h4>
+<pre><code>$ pip3.6 install -r requirements.txt
+$ pip3.6 install gunicorn
+</code></pre>
+<p>Then create a configuration file, just copy from sample file and modify as your preference</p>
+<pre><code>$ cp hujan_ui/local_settings.sample.py hujan_ui/local_settings.py
+</code></pre>
+<p>Then run the database migration</p>
+<pre><code>$ python manage.py migrate
+</code></pre>
+<p>Then create first superuser</p>
+<pre><code>$ python manage.py createsuperuser
+Username (leave blank to use 'root'):
+Email address:
+Password:
+Password (again):
+Superuser created successfully.
+</code></pre>
+<p>Then generate static files</p>
+<pre><code>$ python manage.py collectstatic
+</code></pre>
+<p>Create logs directory</p>
+<pre><code>$ mkdir logs
+</code></pre>
+<p>Runing the service</p>
+<pre><code>python manage.py runserver 8001
+</code></pre>
+<p>Then open your browser <code>http://[hujan-ip]:8001</code> and viola your web apps is already running !</p>
+<h3 id="run-hujan-ui-as-systemd-service">Run Hujan UI as Systemd Service</h3>
+<p>To run <code>Hujan UI</code> as Systemd, simply you can follow this instruction.  </p>
+<ul>
+<li>Create <code>hujan_ui.service</code> file</li>
+</ul>
+<pre><code># touch /etc/systemd/system/hujan_ui.service
+</code></pre>
+<ul>
+<li>Add the following entry.</li>
+</ul>
+<pre><code>[Unit]
+Description=hujan ui daemon
+After=network.target
+
+[Service]
+User=root
+Group=root
+WorkingDirectory=/var/www/html/hujan-ui/
+## Without virtualenv
+ExecStart=/usr/local/bin/gunicorn hujan_ui.wsgi --bind 127.0.0.1:8001 --log-level=debug --log-file=logs/gunicorn.log
+
+## With virtualenv
+ExecStart=/var/www/html/hujan_ui/env/bin/gunicorn hujan_ui.wsgi --bind 127.0.0.1:8001 --log-level=debug --log-file=logs/gunicorn.log
+
+[Install]
+WantedBy=multi-user.target
+</code></pre>
+<ul>
+<li>Reload daemon and start the service.</li>
+</ul>
+<pre><code># systemctl daemon-reload
+# systemctl start hujan_ui.service
+</code></pre>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="../install-maas/" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              MAAS Installation
+            </div>
+          </div>
+        </a>
+      
+      
+        <a href="../machine/" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Manage Machine
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs"], "search": "../assets/javascripts/workers/search.f5903571.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.4e3fea51.min.js"></script>
+      
+    
+  </body>
+</html>
